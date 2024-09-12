@@ -1,0 +1,230 @@
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2c3e50;
+    --text-color: #333;
+    --background-color: #f4f4f4;
+    --accent-color: #e74c3c;
+    --card-background: #fff;
+    --font-main: "poppins", 'Arial', sans-serif;
+    --font-heading: 'Helvetica', sans-serif;
+    --box--shadow:1px 9px 45px 2px #b0b0b0;
+}
+
+
+*{
+    margin: 0;
+    padding: aut0;
+    box-sizing: border-box;
+}
+body {
+    font-family: var(--font-main);
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    /* background: radial-gradient(#412951 0%, #b94b4b 100%); */
+}
+/* styling the navigation */
+header, .topbar,.navLinks{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 3px;
+    background: var(--secondary-color);
+    /* color: var(--background-color  );*/
+} 
+section{
+    
+}
+header{
+    display: grid;
+    grid-template-columns:3fr ;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10000;
+    box-shadow: var(--box--shadow);
+   
+    
+}
+
+.navLinks li{
+        list-style: none;
+        margin: 5px;
+       
+        
+}
+.navLinks li a{
+    text-decoration: none;
+    color: var(--background-color);
+    margin: 10px;
+    padding: 0 8px;
+     /* background-color: red;  */
+}
+.navLinks li a:hover{
+    color: var(--primary-color);
+
+}
+.logo {
+    color: var(--background-color);
+    font-family: "poppins";
+   text-decoration: none;
+   text-transform: uppercase;
+   font-size: 30px;
+   animation: moveText 10s linear infinite
+}
+
+#dark-mode-toggle {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+main{
+    width: 80%;
+    margin: 0px auto;
+    /* padding: 20px; */
+   
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    /* margin-top: 90px; */
+    width: 100%;
+    margin-bottom: 20px;
+    /* border: 1px solid; */
+    
+}
+
+.hero-content {
+    display: grid;
+    place-content: center;
+  
+}
+
+.hero-image {
+   
+   
+}
+
+.hero-image img {
+   width: 400px;
+   height: 90%;
+   /* border: 1px solid; */
+   margin-left: 120px;
+   filter: drop-shadow(3px 9px 6px #999999);
+}
+
+h1 {
+    font-size: 2.5em;
+    line-height: 40px;
+    /* margin-bottom: -12px; */
+}
+span{
+    margin-top:50px ;
+}
+
+.animated-text {
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.animated-text span {
+    display: inline-block;
+    /* animation: moveText 10s linear infinite; */
+}
+
+@keyframes moveText {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+.cta-buttons {
+    margin-top: 80px;
+}
+.intro{
+    line-height: 1.5;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: ;
+    width: 90%;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: var(--accent-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.skills {
+    margin-top: 50px;
+}
+
+.skill {
+    margin-bottom: 20px;
+}
+
+.skill-name {
+    display: inline-block;
+    width: 100px;
+}
+
+.skill-bar {
+    height: 20px;
+    background-color:var(--primary-color);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.skill-progress {
+    height: 100%;
+    background-color:var(--accent-color);
+    animation: fillBar 4s ease-out;
+}
+
+@keyframes fillBar {
+    0% { width: 0; }
+}
+
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.filter-btn {
+    background-color: var(--background-color);
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+.project-card {
+    background-color: var(--card-background);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}

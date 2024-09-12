@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wonder Yaotse - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+</head>
+<body>
+    <!-- header section -->
+    <header>
+       
+        <nav class="topbar">
+            <a class="logo" href="./index.html"><span>WonDer</span></a>
+            <ul class="navLinks">
+                <li><a href="#home"><i class="fas fa-home md"></i> Home</a></li>
+                <li><a href="#about"><i class="fas fa-info md"></i> About</a></li>
+                <li><a href="#skills"><i class="fas fa-code"></i> Skills</a></li>
+                <li><a href="#projects"><i class="fas fa-"></i> Projects</a></li>
+                <li><a href="#education"><i class="fas fa-graduation-cap"></i> Education</a></li>
+                <li><a href="#interests"><i class="fas fa-chart-bar"></i> Interests</a></li>
+                <li><a href="#blog"><i class="fas fa-newspaper"></i> Blog</a></li>
+                <li><a href="#contact"><i class="fas fa-phone"></i> Contact</a></li>
+            </ul>
+            <button id="dark-mode-toggle" aria-label="Toggle dark mode">
+                <i class="fas fa-moon"></i>
+            </button>
+        </nav> 
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Hello there,<br> <span>welcome to my site</span></h1>
+                <p class="animated-text intro">
+                    <span>I'm a Full Stack Developer & UI/UX 
+                       Lorem ipsum dolor sit amet consectetur, adipisicing<br> elit.
+                        Alias  Perspiciatis dicta <br>sint reprehenderit.
+                         Dolor voluptatum tempora.
+                        
+                    </span>
+                </p>
+                <div class="cta-buttons">
+                    <a href="cvPath" target="blank" class="cta-button"><i class="fas fa-download"></i> Download My CV</a>
+                    <a href="#contact" class="cta-button">Contact Me</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="./imgs/profile.png" alt="Developer portrait">
+            </div>
+        </section>
+<!-- proficient langueges -->
+<section class="skills">
+    <h2>Skills</h2>
+    <div class="skill">
+        <span class="skill-name">HTML</span>
+        <div class="skill-bar">
+            <div class="skill-progress" style="width: 90%;"></div>
+        </div>
+    </div>
+    <div class="skill">
+        <span class="skill-name">CSS</span>
+        <div class="skill-bar">
+            <div class="skill-progress" style="width: 85%;"></div>
+        </div>
+    </div>
+    <div class="skill">
+        <span class="skill-name">JavaScript</span>
+        <div class="skill-bar">
+            <div class="skill-progress" style="width: 80%;"></div>
+        </div>
+    </div>
+    <div class="skill">
+        <span class="skill-name">Python</span>
+        <div class="skill-bar">
+            <div class="skill-progress" style="width: 65%;"></div>
+        </div>
+    </div>
+</section>
+
+<!-- projects section -->
+
+        <section id="projects" class="animate-on-scroll">
+            <h2>Projects</h2>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
+                <button class="filter-btn" data-filter="desktop">Desktop</button>
+            </div>
+            <div class="project-grid">
+                <div class="project-card" data-category="web">
+                    <img src="/api/placeholder/300/200" alt="Project 1">
+                    <div class="content">
+                        <h3>Project 1: Personal Blog</h3>
+                        <p>A responsive blog built with HTML, CSS, and JavaScript.</p>
+                        <div class="project-links">
+                            <a href="#" class="btn">Live Demo</a>
+                            <a href="#" class="btn">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="mobile">
+                    <img src="/api/placeholder/300/200" alt="Project 2">
+                    <div class="content">
+                        <h3>Project 2: Weather App</h3>
+                        <p>A weather application using a third-party API and React.</p>
+                        <div class="project-links">
+                            <a href="#" class="btn">Live Demo</a>
+                            <a href="#" class="btn">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="desktop">
+                    <img src="/api/placeholder/300/200" alt="Project 3">
+                    <div class="content">
+                        <h3>Project 3: E-commerce Site</h3>
+                        <p>An online store built with Node.js and Express.</p>
+                        <div class="project-links">
+                            <a href="#" class="btn">Live Demo</a>
+                            <a href="#" class="btn">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="animate-on-scroll">
+            <h2>Education</h2>
+            <ul>
+                <li>Anfoega Senior High School</li>
+                <li>HND ICT from [University Name]</li>
+            </ul>
+            <a href="your-cv.pdf" download class="btn">Download CV</a>
+        </section>
+
+        <section id="interests" class="animate-on-scroll">
+            <h2>Interests</h2>
+            <ul>
+                <li>Web Development</li>
+                <li>Mobile App Development</li>
+                <li>Artificial Intelligence</li>
+                <li>Open Source Contribution</li>
+            </ul>
+        </section>
+
+        <section id="blog" class="animate-on-scroll">
+            <h2>Latest Blog Posts</h2>
+            <div class="blog-grid">
+                <article class="blog-card">
+                    <h3>Getting Started with React Hooks</h3>
+                    <p class="blog-date">May 15, 2024</p>
+                    <p>A beginners guide to understanding and using React Hooks in your projects.</p>
+                    <a href="#" class="btn">Read More</a>
+                </article>
+                <article class="blog-card">
+                    <h3>The Power of CSS Grid</h3>
+                    <p class="blog-date">April 28, 2024</p>
+                    <p>Exploring the flexibility and power of CSS Grid for modern web layouts.</p>
+                    <a href="#" class="btn">Read More</a>
+                </article>
+                <article class="blog-card">
+                    <h3>Optimizing Your Website for Speed</h3>
+                    <p class="blog-date">April 10, 2024</p>
+                    <p>Tips and tricks to improve your website's loading speed and performance.</p>
+                    <a href="#" class="btn">Read More</a>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact" class="animate-on-scroll">
+            <h2>Contact Me</h2>
+            <form id="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 wonder Yaotse. All rights reserved.</p>
+    </footer>
+
+    <!-- Project Modal -->
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modal-content"></div>
+        </div>
+    </div>
+
+    <button id="back-to-top" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="index.js"></script>
+</body>
+</html>
